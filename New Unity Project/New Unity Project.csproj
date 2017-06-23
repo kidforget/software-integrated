@@ -80,7 +80,6 @@
   <ItemGroup>
     <Compile Include="Assets\Tile Based Map and Nav\Scripts\Common\CameraMove.cs" />
     <Compile Include="Assets\Tile Based Map and Nav\Scripts\Common\CameraOrbit.cs" />
-    <Compile Include="Assets\Tile Based Map and Nav\Scripts\Common\Util.cs" />
     <Compile Include="Assets\Tile Based Map and Nav\Scripts\Common\iTween.cs" />
     <Compile Include="Assets\Tile Based Map and Nav\Scripts\Sample\GameController.cs" />
     <Compile Include="Assets\Tile Based Map and Nav\Scripts\Sample\SampleDungeonDoor.cs" />
@@ -96,6 +95,7 @@
     <Compile Include="Assets\Tile Based Map and Nav\Scripts\TMN\TileExtensions\TNEMovementModifier.cs" />
     <Compile Include="Assets\Tile Based Map and Nav\Scripts\TMN\TileNode.cs" />
     <Compile Include="Assets\Tile Based Map and Nav\Scripts\TMN\x_test\hextest.cs" />
+    <Compile Include="Assets\test.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Tile Based Map and Nav\Documentation\readme.txt" />
