@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Tile Based Map and Nav/Scenes/sample04.unity
+- path: Assets/Tile Based Map and Nav/Scenes/sample01.unity
   isLoaded: 1
   isActive: 1
