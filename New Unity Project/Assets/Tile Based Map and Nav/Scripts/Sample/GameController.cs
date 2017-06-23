@@ -87,7 +87,10 @@ public class GameController : TMNController
 			// spawn the unit
 			Unit unit = (Unit)Unit.SpawnUnit(unitFab.gameObject, node);
 			unit.Init(OnUnitEvent);
-			units[unit.playerSide-1].Add(unit);
+
+            
+            //unit.transform.position.Set(0, 0, 0);
+            units[unit.playerSide-1].Add(unit);
 		}
 	}
 
@@ -97,8 +100,55 @@ public class GameController : TMNController
 
 	public void Update()
 	{
-		if (state == State.Running)
+        /*
+        foreach (Unit u in units[0])
+        {
+                units[0].Remove(u);
+        }
+
+        foreach (Unit u in units[1])
+        {
+                units[0].Remove(u);
+        }
+        units[0].Clear();*/
+        if (state == State.Running)
 		{
+            
+            foreach(Unit u in units[0])
+            {
+
+                if (u.HP <= 0)
+                {
+                    
+                    units[0].Remove(u);
+                    //Destroy(u);
+                    u.node.units.Remove(u);
+                    float x = u.transform.position.x;
+                    float y = u.transform.position.y;
+                    float z = u.transform.position.z;
+                    u.transform.localScale = new Vector3(0, 0, 0);
+                    //u.transform.position = new Vector3(x, y+100, z);
+                }
+                    //u.transform.position.y = (10000);
+                
+                    //Destroy(u);
+                    //u.enabled = false;
+            }
+
+            foreach (Unit u in units[1])
+            {
+                if (u.HP <= 0)
+                {
+                    units[0].Remove(u);
+                    //Destroy(u);
+                    u.node.units.Remove(u);
+                    float x = u.transform.position.x;
+                    float y = u.transform.position.y;
+                    float z = u.transform.position.z;
+                    u.transform.localScale = new Vector3(0, 0, 0);
+                    //u.transform.position = new Vector3(x, y+100, z);
+                }
+            }
 			// check if player clicked on tiles/units. You could choose not to call this in certain frames,
 			// for example if your GUI handled the input this frame and you don't want the player 
 			// clicking 'through' GUI elements onto the tiles or units

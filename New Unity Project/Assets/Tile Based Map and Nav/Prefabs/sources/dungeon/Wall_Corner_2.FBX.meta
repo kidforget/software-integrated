@@ -3,6 +3,32 @@ guid: 31259dfbe188dd54b888af5baa9a3e44
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
+    100000: Box001
+    100002: Box002
+    100004: corner2_floor1
+    100006: corner2_floor2
+    100008: corner2_wall1
+    100010: corner2_wall2
+    100012: //RootNode
+    400000: Box001
+    400002: Box002
+    400004: corner2_floor1
+    400006: corner2_floor2
+    400008: corner2_wall1
+    400010: corner2_wall2
+    400012: //RootNode
+    2300000: Box001
+    2300002: Box002
+    2300004: corner2_floor1
+    2300006: corner2_floor2
+    2300008: corner2_wall1
+    2300010: corner2_wall2
+    3300000: Box001
+    3300002: Box002
+    3300004: corner2_floor1
+    3300006: corner2_floor2
+    3300008: corner2_wall1
+    3300010: corner2_wall2
     4300000: Corner_Concave_01
     4300002: Box001
     4300004: corner2_wall1
@@ -13,6 +39,13 @@ ModelImporter:
     4300014: Box004
     4300016: corner2_floor1
     4300018: corner2_floor2
+    6400000: Box001
+    6400002: Box002
+    6400004: corner2_floor1
+    6400006: corner2_floor2
+    6400008: corner2_wall1
+    6400010: corner2_wall2
+    11100000: //RootNode
   materials:
     importMaterials: 1
     materialName: 0

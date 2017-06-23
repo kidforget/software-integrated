@@ -4,6 +4,7 @@
 // http://www.plyoung.com/ or http://plyoung.wordpress.com/
 // ====================================================================================================================
 
+using System.Collections;
 using UnityEngine;
 
 public class Unit : NaviUnit
@@ -16,7 +17,7 @@ public class Unit : NaviUnit
 	public int attackRange = 1;			// range it can attack at
 	public int attackDamage = 1;		// damage caused by an attack
 	public Vector3 targetingOffset = Vector3.zero; // where missile should hit it
-
+    public int HP = 100;
 	#endregion
 	// ====================================================================================================================
 	#region vars
@@ -76,9 +77,45 @@ public class Unit : NaviUnit
 		transform.rotation = Quaternion.LookRotation(direction);
 
 		weapon.Play(target);
-
+        int del = Random.Range(30, 40);
+        target.UnderAttack(del);
 		return true;
 	}
+    private int ddd;
+    IEnumerator MyMethod()
+    {
+        Debug.Log("Before Waiting 2 seconds");
+        yield return new WaitForSeconds(1);
+        Debug.Log("After Waiting 2 Seconds");
+
+
+        HP -= ddd;
+        if (HP <= 0)
+        {
+            HP = 0;
+        }
+    }
+    public void UnderAttack(int del)
+    {
+        ddd = del;
+        StartCoroutine("MyMethod");
+        //MyMethod();
+        //for (int i = 1; i <= 200000000; i++) tot++;
+        
+
+        if (HP <= 0)
+        {
+            HP = 0;
+            //this.node.units.Remove(this);
+            //transform.position = new Vector3(0, 0, 0);
+            //float x = transform.position.x;
+            //float y = transform.position.y;
+            //float z = transform.position.z;
+            //transform.position.Set(x, y+100, z);
+        }
+    }
+
+
 
 	/// <summary>called by the weapon when it is done doing its thing</summary>
 	private void OnAttackDone(NaviUnit unit, int eventCode)

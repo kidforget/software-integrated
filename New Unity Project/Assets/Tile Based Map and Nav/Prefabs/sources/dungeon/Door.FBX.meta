@@ -3,9 +3,27 @@ guid: 175f4f4ccc6785e4eb5fb871068cd530
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
+    100000: //RootNode
+    100002: door
+    100004: door_pillar1
+    100006: door_pillar2
+    400000: //RootNode
+    400002: door
+    400004: door_pillar1
+    400006: door_pillar2
+    2300000: door
+    2300002: door_pillar1
+    2300004: door_pillar2
+    3300000: door
+    3300002: door_pillar1
+    3300004: door_pillar2
     4300000: door
     4300002: door_pillar1
     4300004: door_pillar2
+    6400000: door
+    6400002: door_pillar1
+    6400004: door_pillar2
+    11100000: //RootNode
   materials:
     importMaterials: 1
     materialName: 0

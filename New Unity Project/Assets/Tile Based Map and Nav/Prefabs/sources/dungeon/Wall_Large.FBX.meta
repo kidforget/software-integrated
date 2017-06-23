@@ -3,6 +3,20 @@ guid: 2d49489ad233c3841972d3332eaf7640
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
+    100000: Box004
+    100002: floor_large
+    100004: //RootNode
+    100006: wall_large
+    400000: Box004
+    400002: floor_large
+    400004: //RootNode
+    400006: wall_large
+    2300000: Box004
+    2300002: floor_large
+    2300004: wall_large
+    3300000: Box004
+    3300002: floor_large
+    3300004: wall_large
     4300000: Plane001
     4300002: Plane002
     4300004: Box001
@@ -10,6 +24,10 @@ ModelImporter:
     4300008: wall_large
     4300010: floor_large
     4300012: Box004
+    6400000: Box004
+    6400002: floor_large
+    6400004: wall_large
+    11100000: //RootNode
   materials:
     importMaterials: 1
     materialName: 0
