@@ -120,9 +120,9 @@ public class GameController : TMNController
                 if (u.HP <= 0)
                 {
                     
-                    units[0].Remove(u);
+                    //units[0].Remove(u);
                     //Destroy(u);
-                    u.node.units.Remove(u);
+                    //u.node.units.Remove(u);
                     float x = u.transform.position.x;
                     float y = u.transform.position.y;
                     float z = u.transform.position.z;
@@ -139,9 +139,9 @@ public class GameController : TMNController
             {
                 if (u.HP <= 0)
                 {
-                    units[0].Remove(u);
+                   // units[0].Remove(u);
                     //Destroy(u);
-                    u.node.units.Remove(u);
+                    //u.node.units.Remove(u);
                     float x = u.transform.position.x;
                     float y = u.transform.position.y;
                     float z = u.transform.position.z;

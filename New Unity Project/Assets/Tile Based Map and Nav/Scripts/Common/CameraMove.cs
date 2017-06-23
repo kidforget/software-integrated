@@ -28,7 +28,27 @@ public class CameraMove : MonoBehaviour
 		if (target && followTarget) tr.position = target.position;
 	}
 
-	void Update()
+    void OnGUI()
+    {
+        if (GUI.Button(new Rect(Screen.width-400, Screen.height-150, 150f, 150f), "A")) {
+            moved = true; Translate(Vector3.left * Time.deltaTime * speed * 10);
+        };
+        if (GUI.Button(new Rect(Screen.width - 250, Screen.height - 300, 150f, 150f), "W"))
+        {
+            moved = true; Translate(Vector3.forward * Time.deltaTime * speed * 10);
+        };
+        if (GUI.Button(new Rect(Screen.width - 250, Screen.height - 150, 150f, 150f), "S"))
+        {
+            moved = true; Translate(Vector3.back * Time.deltaTime * speed * 10);
+        };
+        if (GUI.Button(new Rect(Screen.width-100, Screen.height - 150, 150f, 150f), "D"))
+        {
+            moved = true; Translate(Vector3.right * Time.deltaTime * speed * 10);
+        };
+
+    }
+
+    void Update()
 	{
 		if (Input.anyKey && allowInput)
 		{
